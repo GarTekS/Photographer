@@ -134,6 +134,10 @@ img {
   display: flex;
 }
 
+.photographer img {
+  border-radius: 30px;
+}
+
 .students {
   max-width: 154px;
   padding-left: 20px;
