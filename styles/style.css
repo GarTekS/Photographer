@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  width: 355px;
+  max-width: 355px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -19,22 +20,60 @@ body {
   color: var(--accent-color);
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ============== */
 
 .header {
   padding: 20px 0;
 }
 
+.header__box {
+  display: flex;
+  align-items: center;
+}
+
+.header__sign {
+  padding: 16px 58px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  color: #121212;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #121212;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.55;
+  flex-shrink: 0;
+  transition: all .7s;
+  display: none;
+}
+
 .header__inner {
+  width: 100%;
   display: flex;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
-  padding: 15px 20px;
+  padding: 14px 20px;
   align-items: center;
 }
 
 .header__logo {
   margin-right: auto;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  gap: 28px;
 }
 
 .header__camera {
@@ -101,6 +140,8 @@ body {
 }
 
 .students img {
+  width: 44px;
+  height: 44px;
   border-radius: 100px;
   border: 2px solid #1D1D1D
 }
@@ -182,7 +223,7 @@ body {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.28px;
-  width: 330px;
+  max-width: 330px;
 }
 
 .courses {
@@ -202,7 +243,7 @@ body {
   font-size: 14px;
   line-height: 128.571%;
   letter-spacing: -0.28px;
-  width: 330px;
+  max-width: 330px;
   margin-bottom: 40px;
 }
 
@@ -325,7 +366,8 @@ body {
 }
 
 .register__inpt {
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   min-height: 46px;
@@ -342,14 +384,16 @@ body {
 }
 
 .message {
-  width: 335px;
+  max-width: 335px;
   min-height: 112px;
   flex-shrink: 0;
   padding: 18px 0 80px 14px;
+  width: 100%;
 }
 
 .register__btn {
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
   padding: 14px 127px;
   background: #fff;
   color: #121212;
@@ -361,7 +405,7 @@ body {
   transition: all .5s;
 }
 
-.register__btn:hover {
+.register__btn:hover, .header__sign:hover {
   color: var(--accent-color);
   background-color: #1D1D1D;
 }
@@ -394,11 +438,10 @@ body {
 }
 
 .client {
-  width: 335px;
-  height: 270px;
   flex-shrink: 0;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 20px;
 }
 
 .client__img {
@@ -409,34 +452,26 @@ body {
 }
 
 .client__wrapper {
-  margin: 20px 0px 0 20px;
+  display: flex;
 }
 
 .client__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  margin-bottom: 4px;
 }
 
 .client_subinfo {
-  position: relative;
-  top: 20px;
-  left: -148px;
   color: rgba(255, 255, 255, 0.50);
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: -0.24px;
+  margin-bottom: 10px;
 }
 
-.client__inner {
-  padding: 0px 20px 20px 20px;
-}
-
-.starts {
-  position: relative;
-  left: 70px;
-  top: -5px;
-  margin-bottom: 20px;
+.client_info {
+  margin-top: 10px;
 }
 
 .footer {
@@ -480,9 +515,10 @@ body {
 }
 
 .footer_inpt {
-  width: 267px;
+  display: block;
+  max-width: 267px;
+  width: 100%;
   height: 60px;
-  flex-shrink: 0;
   border-radius: 12px;
   background: #FFF;
   padding: 20px 0px 20px 18px;
@@ -491,10 +527,10 @@ body {
 .footer__submit {
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
   border-radius: 12px;
   background: #1D1D1D;
   margin-left: 8px;
+  flex-shrink: 0;
 }
 
 .footer__privacy {
@@ -509,11 +545,24 @@ body {
 
 @media screen and (min-width:735px) {
   .container {
-    width: 735px;
+    max-width: 735px;
+    width: 100%;
     padding: 0 16px;
   }
   .header__camera {
     display: none;
+  }
+  .header__inner {
+    padding: 16px 20px;
+  }
+  .header__sign {
+    display: block;
+  }
+  .students {
+    display: flex;
+    max-width: 240px;
+    gap: 12px;
+    width: 100%;
   }
 }
 
@@ -521,8 +570,19 @@ body {
 
 @media  screen and (min-width:1270px) {
   .container {
-    width: 1270px;
+    max-width: 1270px;
+    width: 100%;
     padding: 0 15px;
+  }
+  .header__inner {
+    padding: 21px 50px;
+  }
+  .header__button {
+    display: none;
+  }
+
+  .header__navigation {
+    display: block;
   }
 }
 
