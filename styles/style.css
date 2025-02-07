@@ -16,8 +16,24 @@ body {
   padding: 0 10px;
 }
 
+.about__title, .courses__title, .mentors__title, 
+.sign__title, .clients__title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.12px;
+}
+
 .about__title span, .courses__title span, .mentors__title span, .sign__title span {
   color: var(--accent-color);
+}
+
+.hero__subtext, .about__text, .about__subtext, 
+.courses__text, .advantage__head p, .sign__text, 
+.client_info {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
 }
 
 img {
@@ -123,9 +139,6 @@ img {
 }
 
 .hero__subtext {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.28px;
   padding: 0px 20px 40px;
 }
 
@@ -213,10 +226,6 @@ img {
 }
 
 .about__title {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -1.12px;
   margin-bottom: 25px;
 }
 
@@ -226,9 +235,6 @@ img {
 }
 
 .about__text, .about__subtext {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.28px;
   max-width: 330px;
 }
 
@@ -238,17 +244,10 @@ img {
 }
 
 .courses__title {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -1.12px;
   margin-bottom: 20px;
 }
 
 .courses__text {
-  font-size: 14px;
-  line-height: 128.571%;
-  letter-spacing: -0.28px;
   max-width: 330px;
   margin-bottom: 40px;
 }
@@ -276,9 +275,6 @@ img {
 
 .advantage__head p {
   color: rgba(255, 255, 255, 0.40);
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.28px;
 }
 
 .arrow-right {
@@ -317,10 +313,6 @@ img {
 
 .mentors__title {
   margin-bottom: 40px;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -1.12px;
 }
 
 .mentor {
@@ -356,18 +348,11 @@ img {
 }
 
 .sign__title {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -1.12px;
   margin-bottom: 20px;
 }
 
 .sign__text {
   width: 295px;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.28px;
   margin-bottom: 41px;
 }
 
@@ -433,10 +418,6 @@ img {
 }
 
 .clients__title {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -1.12px;
   margin-bottom: 40px;
 }
 
@@ -553,6 +534,21 @@ img {
     width: 100%;
     padding: 0 16px;
   }
+
+  .about__title, .courses__title, .sign__title, 
+  .clients__title, .mentors__title  {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+  }
+
+  .about__text-wrap, .courser__text,
+  .sign__text  {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.32px;
+  }
+
   .header__camera {
     display: none;
   }
@@ -620,11 +616,6 @@ img {
   .photographer {
     padding: 0px 155px;
   }
-  .about__title {
-    font-size: 48px;
-    line-height: 112.5%;
-    letter-spacing: -1.92px;
-  }
   .about__text-wrap {
     margin-top: 50px;
     display: flex;
@@ -643,23 +634,12 @@ img {
     gap: 58px;
     padding: 0 20px;
   }
-  .courses__title {
-    font-size: 48px;
-    line-height: 112.5%;
-    letter-spacing: -1.92px;
-  }
-  .courser__text {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.32px;
-  }
   .advantages {
     width: 704px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; 
     gap: 20px;
-    padding: 0 20px;
   }
   .advantage {
     max-width: 342px;
@@ -669,9 +649,6 @@ img {
     margin-top: 100px;
   }
   .mentors__title {
-    font-size: 48px;
-    line-height: 112.5%;
-    letter-spacing: -1.92px;
     margin-bottom: 50px;
   }
   .mentors__wrap-wrap {
@@ -706,17 +683,9 @@ img {
     margin-top: 100px;
     padding: 0 20px;
   }
-  .sign__title {
-    font-size: 48px;
-    line-height: 112.5%;
-    letter-spacing: -1.92px;
-  }
   .sign__text {
     max-width: 480px;
     width: 100%;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.32px;
   }
   .register__inpt {
     max-width: 480px;
@@ -746,9 +715,6 @@ img {
     padding: 0 32px;
   }
   .clients__title {
-    font-size: 48px;
-    line-height: 112.5%;
-    letter-spacing: -1.92px;
     margin-bottom: 50px;
   }
   .clients__wrap {
