@@ -356,6 +356,10 @@ img {
   margin-bottom: 41px;
 }
 
+.sign__camera {
+  display: none;
+}
+
 .register__inpt {
   max-width: 335px;
   width: 100%;
@@ -648,6 +652,9 @@ img {
   .mentors {
     margin-top: 100px;
   }
+  .mentor {
+    max-width: 180px;
+  }
   .mentors__title {
     margin-bottom: 50px;
   }
@@ -728,9 +735,7 @@ img {
     line-height: 1.4; 
   }
   .client_subinfo {
-    position: relative;
     top: 26px;
-    left: -143px;
     font-size: 14px;
     line-height: 128.571%;
     letter-spacing: -0.28px;
@@ -776,8 +781,9 @@ img {
   .container {
     max-width: 1270px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 100px;
   }
+
   .header__inner {
     padding: 21px 50px;
   }
@@ -792,6 +798,183 @@ img {
   }
   .header__item:hover {
     color: var(--accent-color);
+  }
+  .header__sign {
+    padding: 16px 84px;
+    margin-left: 20px;
+  }
+  .hero {
+    position: relative;
+    min-height: 600px;
+  }
+  .hero__title {
+    max-width: 583px;
+    width: 100%;
+    font-size: 64px;
+    line-height: 1.06;
+    letter-spacing: -2.56px;
+    padding: 50px 0 0 50px;
+  }
+  .hero__subtext {
+    max-width: 418px;
+    width: 100%;
+    padding: 20px 0 0 50px;
+  }
+  .photographer {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  .hero__reviews {
+    margin-top: 136px;
+    padding: 0 0 0 20px;
+  }
+  .photographer img {
+    width: 397px;
+    height: 520px;
+    flex-shrink: 0;
+  }
+  .about {
+    padding: 0;
+    margin-top: 150px;
+  }
+  .about__title {
+    margin-bottom: 50px;
+  }
+  .about__wrapper {
+    display: flex;
+  }
+  .camera {
+    max-width: 488px;
+    height: 260px;
+    margin-right: 40px;
+  }
+  .about__text-wrap {
+    margin-top: 0px;
+    gap: 20px;
+  }
+  .about__text {
+    max-width: 268px;
+    width: 100%;
+  }
+  .about__subtext {
+    max-width: 264px;
+    width: 100%;
+  }
+  .courses {
+    margin-top: 150px;
+  }
+  .courses__title {
+    margin: 0;
+  }
+  .courses__text-wrap {
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .courses__text {
+    margin: 0;
+  }
+  .advantages {
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1081px;
+    width: 100%;
+  }
+  .advantage {
+    margin-bottom: 0;
+  }
+  .mentors {
+    margin-top: 150px;
+  }
+  .mentor {
+    max-width: 180px;
+  }
+  .mentor:nth-child(3) {
+    max-width: 194px;
+    width: 100%;
+  }
+  .mentors__wrap {
+    justify-content: start;
+    max-width: 1034px;
+    flex-wrap: nowrap;
+  }
+  .sign {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+    padding: 0;
+  }
+  .sign__wrap {
+    max-width: 480px;
+  }
+  .sign__camera {
+    display: flex;
+  }
+  .shtativ__wrap {
+    position: absolute;
+    bottom: 50px;
+    max-width: 180px;
+    height: 288px;
+    padding: 86px 19px 62px 0px;
+    border-radius: 1000px;
+    background: #BEA69E;
+    text-align: center;
+    align-content: center;
+    box-shadow: -35.562px 17.781px 25.44px 0px rgba(0, 0, 0, 0.26);
+  }
+  .shtativ {
+    margin-left: -20px;
+    width: 150px;
+    height: 142px;
+  }
+  .big__wrap {
+    margin-left: 170px;
+    padding: 156px 50px 88px 50px;
+    max-width: 340px;
+    height: 540px;
+    border-radius: 1000px;
+    background: #1D1D1D;
+  }
+  .big__camera {
+    width: 240px;
+    height: 296px;
+  }
+  .clients__wrap {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .clients {
+    margin-top: 150px;
+    padding: 0;
+  }
+  .client {
+    max-width: 530px;
+  }
+  .starts {
+    margin-left: 83px;
+  }
+  .footer {
+    margin-top: 150px;
+  }
+  .footer__wrapper {
+    justify-content: space-between;
+  }
+  .footer__wrap {
+    gap: 50px;
+  }
+  .footer__info {
+    max-width: 300px;
+    width: 100%;
+  }
+  .footer_inpt {
+    padding: 20px 78px 20px 18px;
   }
 }
 

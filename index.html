@@ -109,15 +109,17 @@
       </section>
       <section class="about">
         <p class="about__title">About <span>Us</span></p>
-        <img class="camera" src="./images/camera.png">
-        <div class="about__text-wrap">
-          <p class="about__text">
-            Our photography school is designed to teach you everything you need to know about this magical art. Regardless of your experience or skill level, we offer a wide range of courses to suit your needs and interests. Our teaching team consists of experienced photographers who have many years of experience in this field. They strive not only to share their knowledge, but also to inspire you to develop and express your unique creativity.
-  
-          </p>
-          <p class="about__subtext">
-            Our courses cover a wide range of topics, from the basics of photography and equipment use to professional image processing and creating impressive compositions. You will have the opportunity to learn the technical aspects of photography, discover your own style and develop your own visual language.
-          </p>
+        <div class="about__wrapper">
+          <img class="camera" src="./images/camera.png">
+          <div class="about__text-wrap">
+            <p class="about__text">
+              Our photography school is designed to teach you everything you need to know about this magical art. Regardless of your experience or skill level, we offer a wide range of courses to suit your needs and interests. Our teaching team consists of experienced photographers who have many years of experience in this field. They strive not only to share their knowledge, but also to inspire you to develop and express your unique creativity.
+    
+            </p>
+            <p class="about__subtext">
+              Our courses cover a wide range of topics, from the basics of photography and equipment use to professional image processing and creating impressive compositions. You will have the opportunity to learn the technical aspects of photography, discover your own style and develop your own visual language.
+            </p>
+          </div>
         </div>
       </section>
       <section class="courses">
@@ -189,7 +191,7 @@
             </div>
             <div class="mentor">
               <img class="mentor__img" src="./images/girl2__mentor.jpg">
-              <p class="mentor__name">Mia Dubrovska</p>
+              <p class="mentor__name Mia">Mia Dubrovska</p>
               <p class="mentor__info">20 years of experience</p>
             </div>
             <div class="mentor">
@@ -201,21 +203,31 @@
         </div>
       </section>
       <section class="sign">
-        <p class="sign__title">
-          Sign <span>Up</span>
-        </p>
-        <p class="sign__text">
-          Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
-        </p>
-        <form class="register">
-          <input class="register__inpt" type="text" placeholder="Enter your name">
-          <input class="register__inpt" type="email" placeholder="Enter your email">
-          <input class="register__inpt message" type="text" placeholder="Message">
-          <button class="register__btn" type="submit">SEND</button>
-          <p class="register__text">By clicking on “Send” button, you agree to our 
-            <span>Privacy Policy</span>, and allow Promodo to use this information for marketing purposes.
+        <div class="sign__wrap"> 
+          <p class="sign__title">
+            Sign <span>Up</span>
           </p>
-        </form>
+          <p class="sign__text">
+            Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+          </p>
+          <form class="register">
+            <input class="register__inpt" type="text" placeholder="Enter your name">
+            <input class="register__inpt" type="email" placeholder="Enter your email">
+            <input class="register__inpt message" type="text" placeholder="Message">
+            <button class="register__btn" type="submit">SEND</button>
+            <p class="register__text">By clicking on “Send” button, you agree to our 
+              <span>Privacy Policy</span>, and allow Promodo to use this information for marketing purposes.
+            </p>
+          </form>
+        </div>
+        <div class="sign__camera">
+          <div class="shtativ__wrap">
+            <img class="shtativ" src="./images/Shatativ.png">
+          </div>
+          <div class="big__wrap">
+            <img class="big__camera" src="./images/big__camerapng.png">
+          </div>
+        </div>
       </section>
       <section class="clients">
         <p class="clients__title">Reviews</p>
@@ -224,8 +236,10 @@
             <div class="client__wrapper">
               <img class="client__img" src="./images/user.jpg">
               <div class="client__inner">
-                <h3 class="client__name">Abraham Baker</h3>
-                <p class="client_subinfo">Student</p>
+                <div>
+                  <h3 class="client__name">Abraham Baker</h3>
+                  <p class="client_subinfo">Student</p>
+                </div>
                 <div class="starts">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="star">
@@ -257,6 +271,47 @@
             </div>
             <p class="client_info">
                 I am very pleased that I decided to enroll in photography school. The teachers turned out to be very talented and experienced professionals who share their knowledge and are dedicated to their work. I was able to expand my skills and discover my own style.
+            </p>
+          </div>
+          <div class="client">
+            <div class="client__wrapper">
+              <img class="client__img" src="./images/Amand.jpg">
+              <div class="client__inner">
+                <div>
+                  <h3 class="client__name">Amanda Lowery</h3>
+                  <p class="client_subinfo">Student</p>
+                </div>
+                <div class="starts">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="star">
+                    <path id="Vector" d="M8 2L9.854 5.94953L14 6.58675L11 9.65931L11.708 14L8 11.9495L4.292 14L5 9.65931L2 6.58675L6.146 5.94953L8 2Z" fill="#BEA69E" stroke="#BEA69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="star">
+                    <path id="Vector" d="M8 2L9.854 5.94953L14 6.58675L11 9.65931L11.708 14L8 11.9495L4.292 14L5 9.65931L2 6.58675L6.146 5.94953L8 2Z" fill="#BEA69E" stroke="#BEA69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="star">
+                    <path id="Vector" d="M8 2L9.854 5.94953L14 6.58675L11 9.65931L11.708 14L8 11.9495L4.292 14L5 9.65931L2 6.58675L6.146 5.94953L8 2Z" fill="#BEA69E" stroke="#BEA69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="star">
+                    <path id="Vector" d="M8 2L9.854 5.94953L14 6.58675L11 9.65931L11.708 14L8 11.9495L4.292 14L5 9.65931L2 6.58675L6.146 5.94953L8 2Z" fill="#BEA69E" stroke="#BEA69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="star">
+                    <path id="Vector" d="M8 2L9.854 5.94953L14 6.58675L11 9.65931L11.708 14L8 11.9495L4.292 14L5 9.65931L2 6.58675L6.146 5.94953L8 2Z" fill="#BEA69E" stroke="#BEA69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="client_info">
+              The courses at the photography school exceeded all my expectations. I gained not only technical knowledge, but also inspiration and motivation to reach new heights in my creativity. Hands-on classes and workshops helped me understand different styles of photography.
             </p>
           </div>
         </div>
