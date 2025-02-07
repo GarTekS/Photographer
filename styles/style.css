@@ -98,7 +98,6 @@ img {
   fill: #FFF;
 }
 
-
 /* ======= */
 
 
@@ -134,10 +133,6 @@ img {
   display: flex;
 }
 
-.photographer img {
-  border-radius: 30px;
-}
-
 .students {
   max-width: 154px;
   padding-left: 20px;
@@ -161,11 +156,16 @@ img {
 .hero__arrow {
   display: flex;
   align-items: center;
+  max-width: 89px;
   margin-top: 4px;
   gap: 4px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.56px;
+  flex-shrink: 0;
+}
+.hero__arrow p {
+  max-width: 67px;
 }
 
 .reviews {
@@ -182,11 +182,11 @@ img {
   margin-left: 40px;
 }
 
-.wrapper_rev {
+.wrapper__rev {
   margin-left: 12px;
 }
 
-.Reviews-text {
+.reviews__text {
   color: var(--sub-color);
   font-size: 14px;
   line-height: 1.28;
@@ -200,10 +200,12 @@ img {
   margin-top: 4px;
 }
 
-.Photographer {
-  margin-top: 30px;
+.photographer {
   text-align: center;
+  margin-top: 30px;
+  padding: 0px 38px;
 }
+
 
 .about {
   margin-top: 50px;
@@ -263,7 +265,7 @@ img {
 }
 
 .advantage:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .advantage__head {
@@ -349,7 +351,7 @@ img {
   letter-spacing: -0.24px;
 }
 
-.Sign {
+.sign {
   margin-top: 80px;
 }
 
@@ -383,16 +385,13 @@ img {
   margin-bottom: 8px;
 }
 
-.register__inpt:last-child {
-  margin-bottom: 0;
-}
-
 .message {
   max-width: 335px;
   min-height: 112px;
   flex-shrink: 0;
   padding: 18px 0 80px 14px;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .register__btn {
@@ -565,9 +564,243 @@ img {
   }
   .students {
     display: flex;
-    max-width: 240px;
+    max-width: 259px;
     gap: 12px;
     width: 100%;
+  }
+  .hero__title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 106.667%;
+    letter-spacing: -2.4px;
+    padding: 64px 155px 0 32px;
+  }
+  .hero__subtext {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+    padding: 20px 254px 40px 32px;
+  }
+  .hero__title span {
+    color: var(--accent-color);
+  }
+  .hero__reviews {
+    padding: 0 254px 40px 10px;
+  }
+  .students img {
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+    border: 3px solid #1D1D1D
+  }
+  .hero__arrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 82px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.64px;
+  }
+  .hero__arrow p {
+    max-width: 82px;
+  }
+  .star {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.64px;
+  }
+  .user__reviews  {
+    margin-top: 8px;
+  }
+  .photographer {
+    padding: 0px 155px;
+  }
+  .about__title {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+  }
+  .about__text-wrap {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+  }
+  .about__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .courses {
+    margin-top: 100px;
+    padding: 0;
+  }
+  .courses__text-wrap {
+    display: flex;
+    gap: 58px;
+    padding: 0 20px;
+  }
+  .courses__title {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+  }
+  .courser__text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.32px;
+  }
+  .advantages {
+    width: 704px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .advantage {
+    max-width: 342px;
+    width: 100%;
+  }
+  .mentors {
+    margin-top: 100px;
+  }
+  .mentors__title {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+    margin-bottom: 50px;
+  }
+  .mentors__wrap-wrap {
+    display: flex; 
+    justify-content: center;
+  }
+  .mentors__wrap {
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 488px;
+    width: 100%;
+    gap: 100px;
+  }
+  .mentor {
+    margin-bottom: 0;
+  }
+  .mentor img {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+  }
+  .mentor__name {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .mentor__info {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+  }
+  .sign {
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+  .sign__title {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+  }
+  .sign__text {
+    max-width: 480px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.32px;
+  }
+  .register__inpt {
+    max-width: 480px;
+    padding: 20px 340px 20px 18px;
+  }
+  .message {
+    padding: 20px 397px 79px 18px;
+  }
+  .register__btn {
+    margin-top: 40px;
+    padding: 16px 240px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 155.556%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register__text {
+    max-width: 480px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 128.571%;
+  }
+  .clients {
+    margin-top: 100px;
+    padding: 0 32px;
+  }
+  .clients__title {
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: -1.92px;
+    margin-bottom: 50px;
+  }
+  .clients__wrap {
+    padding: 0 32px;
+  }
+  .client__inner {
+    display: flex;
+  }
+  .client__name {
+    font-size: 20px;
+    line-height: 1.4; 
+  }
+  .client_subinfo {
+    position: relative;
+    top: 26px;
+    left: -143px;
+    font-size: 14px;
+    line-height: 128.571%;
+    letter-spacing: -0.28px;
+  }
+  .starts {
+    margin-left: 163px;
+  }
+  .client_info {
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer__wrapper {
+    display: flex;
+  }
+  .footer__info {
+    max-width: 152px;
+    width: 100%;
+  }
+  .number {
+    margin-top: 16px;
+  }
+  .footer__wrap {
+    margin-top: 0;
+    margin-left: 48px;
+  }
+  .footer__reg {
+    margin-top: 0;
+    margin-bottom: 160px;
+    margin-left: 55px;
+  }
+  .footer__privacy {
+    font-size: 14px;
+    line-height: 128.571%;
+    margin-bottom: 25px;
   }
 }
 
@@ -585,9 +818,14 @@ img {
   .header__button {
     display: none;
   }
-
   .header__navigation {
     display: block;
+  }
+  .header__item {
+    transition: all 0.5s;
+  }
+  .header__item:hover {
+    color: var(--accent-color);
   }
 }
 
