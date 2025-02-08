@@ -44,7 +44,9 @@ img {
 }
 
 /* ============== */
-
+.big__cmrs {
+  display: none;
+}
 .header {
   padding: 20px 0;
 }
@@ -219,9 +221,6 @@ img {
   text-align: center;
   margin-top: 30px;
   padding: 0px 38px;
-}
-.big__cmrs {
-  display: none;
 }
 
 
