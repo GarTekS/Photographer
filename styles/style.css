@@ -44,9 +44,6 @@ img {
 }
 
 /* ============== */
-.big__cmrs {
-  display: none;
-}
 .header {
   padding: 20px 0;
 }
@@ -222,7 +219,9 @@ img {
   margin-top: 30px;
   padding: 0px 38px;
 }
-
+.big__cmrs {
+  display: none;
+}
 
 .about {
   margin-top: 50px;
