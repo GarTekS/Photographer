@@ -220,6 +220,9 @@ img {
   margin-top: 30px;
   padding: 0px 38px;
 }
+.big__cmrs {
+  display: none;
+}
 
 
 .about {
