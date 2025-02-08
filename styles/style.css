@@ -777,9 +777,9 @@ img {
 
 /* ============== */
 
-@media  screen and (min-width:1270px) {
+@media  screen and (min-width:1280px) {
   .container {
-    max-width: 1270px;
+    max-width: 1280px;
     width: 100%;
     padding: 0 100px;
   }
@@ -889,6 +889,7 @@ img {
   }
   .mentors {
     margin-top: 150px;
+    padding: 0;
   }
   .mentor {
     max-width: 180px;
@@ -919,6 +920,7 @@ img {
     position: absolute;
     bottom: 50px;
     max-width: 180px;
+    width: 100%;
     height: 288px;
     padding: 86px 19px 62px 0px;
     border-radius: 1000px;
@@ -933,7 +935,7 @@ img {
     height: 142px;
   }
   .big__wrap {
-    margin-left: 170px;
+    margin-left: 200px;
     padding: 156px 50px 88px 50px;
     max-width: 340px;
     height: 540px;
@@ -978,4 +980,217 @@ img {
   }
 }
 
+@media  screen and (min-width:1440px) {
+  .container {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .camera {
+    width: 560px;
+    height: 240px;
+  }
+  .about__text-wrap {
+    gap: 40px;
+    align-items: center;
+  }
+  .about__text {
+    max-width: 314px;
+    width: 100%;
+  }
+  .about__subtext {
+    max-width: 276px;
+    width: 100%;
+  }
+  .courses__text {
+    max-width: 565px;
+    width: 100%;
+  }
+  .advantages {
+    max-width: 1240px;
+  }
+  .advantage {
+    max-width: 400px;
+    min-height: 412px;
+  }
+  .advantage__title {
+    margin-bottom: 200px;
+  }
+  .shtativ__wrap {
+    max-width: 190px;
+    width: 100%;
+  }
+  .big__wrap {
+    max-width: 350px;
+    width: 100%;
+    margin-left: 210px;
+  }
+  .client {
+    max-width: 610px;
+  }
+}
+
+@media  screen and (min-width:1680px) {
+  .container {
+    max-width: 1680px;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .about__title, .courses__title, .mentors__title, 
+  .sign__title, .clients__title {
+    font-size: 54px;
+}
+  .hero__subtext, .about__text, .about__subtext, 
+  .courses__text, .advantage__head p, .sign__text, 
+  .client_info {
+  font-size: 18px;
+}
+.header__button {
+  text-align: center;
+  align-content: center;
+}
+.students img{
+  width: 72px;
+  height: 72px;
+}
+.hero__arrow {
+  font-size: 18px;
+}
+.hero__arrow svg {
+  width: 32px;
+  height: 12px;
+}
+.star {
+  width: 70px;
+  padding: 15px;
+  height: 70px;
+  margin-left: 110px;
+}
+.star svg {
+  width: 40px;
+  height: 40px;
+}
+.reviews__text {
+  font-size: 20px;
+}
+.user__reviews {
+  font-size: 24px;
+}
+.camera {
+  max-width: 688px;
+  height: 340px;
+}
+.about__text {
+  max-width: 450px;
+}
+.about__subtext {
+  max-width: 435px;
+}
+.advantages {
+  max-width: 1680px;
+}
+.advantage {
+  max-width: 600px;
+  min-height: 550px;
+}
+.arrow-right {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+.advantage__title {
+  font-size: 34px;
+  margin-bottom: 340px;
+}
+.advantage__subtext {
+  font-size: 16px;
+}
+.mentor {
+  max-width: 280px;
+  width: 100%;
+}
+.mentors img {
+  width: 280px;
+  height: auto;
+  border-radius: 1000px;
+}
+.mentor:nth-child(3) {
+  max-width: 280px;
+  width: 100%;
+}
+.mentor__name {
+  font-size: 30px;
+}
+.mentor__info {
+  font-size: 16px;
+}
+.mentors__wrap {
+  max-width: 1680px;
+  justify-content: space-between;
+}
+.sign__wrap {
+  max-width: 780px;
+}
+.sign__text {
+  max-width: 580px;
+}
+.register__inpt {
+  font-size: 18px;
+  max-width: 780px;
+  height: 90px;
+}
+.message {
+  min-height: 180px;
+  padding-bottom: 129px;
+}
+.register__btn {
+  max-width: 780px;
+  height: 80px;
+  font-size: 21px;
+}
+.register__text {
+  max-width: 780px;
+  font-size: 18px;
+}
+.sign__camera {
+  margin-left: 120px;
+}
+.shtativ__wrap {
+  height: 388px;
+  right: 380px;
+}
+.shtativ {
+  max-width: 250px;
+  width: 100%;
+  height: 242px;
+}
+.big__wrap {
+  height: 650px;
+  margin-top: 130px;
+  margin-left: 310px;
+}
+.client {
+  padding: 30px;
+  max-width: 780px;
+  height: 270px;
+}
+.client__img {
+  width: 76px;
+  height: 76px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+}
+.client__name {
+  font-size: 24px;
+}
+.client_subinfo {
+  font-size: 18px;
+}
+.starts {
+  margin-left: 300px;
+}
+.starts svg {
+  width: 24px;
+  height: 24px;
+}
+}
 
