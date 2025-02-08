@@ -118,6 +118,7 @@ img {
 
 
 .hero {
+  position: relative;
   border-radius: 30px;
   background: #1D1D1D;
   min-height: 770px;
@@ -430,6 +431,7 @@ img {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   padding: 20px;
+  margin-bottom: 12px;
 }
 
 .client__img {
@@ -538,7 +540,9 @@ img {
     width: 100%;
     padding: 0 16px;
   }
-
+  .big__cmrs {
+    display: none;
+  }
   .about__title, .courses__title, .sign__title, 
   .clients__title, .mentors__title  {
     font-size: 48px;
@@ -958,6 +962,7 @@ img {
   }
   .client {
     max-width: 530px;
+    margin-bottom: 0;
   }
   .starts {
     margin-left: 83px;
@@ -1042,15 +1047,32 @@ img {
   .hero__subtext, .about__text, .about__subtext, 
   .courses__text, .advantage__head p, .sign__text, 
   .client_info {
-  font-size: 18px;
+  font-size: 16px;
 }
 .header__button {
   text-align: center;
   align-content: center;
 }
+.big__cmrs {
+  padding: 62px 50px 0px 50px;
+  max-width: 340px;
+  height: 440px;
+  border-radius: 1000px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 80px;
+  right: 500px;
+  display: block;
+  box-shadow: -35.562px 17.781px 25.44px 0px rgba(0, 0, 0, 0.26);
+}
+.big__cmrs img {
+  width: 240px;
+  height: 296px;
+  opacity: 0.9;
+}
 .students img{
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
 }
 .hero__arrow {
   font-size: 18px;
@@ -1060,20 +1082,20 @@ img {
   height: 12px;
 }
 .star {
-  width: 70px;
+  width: 60px;
   padding: 15px;
-  height: 70px;
+  height: 60px;
   margin-left: 110px;
 }
 .star svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .reviews__text {
-  font-size: 20px;
+  font-size: 16px;
 }
 .user__reviews {
-  font-size: 24px;
+  font-size: 20px;
 }
 .camera {
   max-width: 688px;
@@ -1105,20 +1127,20 @@ img {
   font-size: 16px;
 }
 .mentor {
-  max-width: 280px;
+  max-width: 250px;
   width: 100%;
 }
 .mentors img {
-  width: 280px;
+  width: 250px;
   height: auto;
   border-radius: 1000px;
 }
 .mentor:nth-child(3) {
-  max-width: 280px;
+  max-width: 250px;
   width: 100%;
 }
 .mentor__name {
-  font-size: 30px;
+  font-size: 28px;
 }
 .mentor__info {
   font-size: 16px;
@@ -1136,7 +1158,7 @@ img {
 .register__inpt {
   font-size: 18px;
   max-width: 780px;
-  height: 90px;
+  height: 80px;
 }
 .message {
   min-height: 180px;
@@ -1144,7 +1166,7 @@ img {
 }
 .register__btn {
   max-width: 780px;
-  height: 80px;
+  height: 70px;
   font-size: 21px;
 }
 .register__text {
@@ -1192,5 +1214,58 @@ img {
   width: 24px;
   height: 24px;
 }
+.number, .geo, .footer__wrap  {
+  font-size: 18px;
+}
 }
 
+@media  screen and (min-width:1920px) {
+  .container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .big__cmrs {
+    right: 620px;
+  }
+  .about__text-wrap {
+    max-width: 1100px;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .advantages {
+    max-width: 1920px;
+  }
+  .advantage {
+    min-height: 635px;
+  }
+  .advantage__title {
+    margin-bottom: 385px;
+  }
+  .shtativ__wrap {
+    right: 485px;
+  }
+  .big__wrap {
+    margin-top: 15px;
+    margin-left: 340px;
+  }
+  .clients__wrap {
+    max-width: 1920px;
+    width: 100%;
+  }
+  .client {
+    max-width: 880px;
+  }
+  .client_info {
+    margin-top: 48px;
+  }
+  .starts {
+    margin-left: 400px;
+  }
+  .footer__wrap {
+    gap: 80px;
+  }
+}
