@@ -1,3 +1,7 @@
+* {
+  overflow-y:hidden;
+}
+
 body {
   font-family: 'DM Sans';
   background-color: #121212;
