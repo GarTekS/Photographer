@@ -33,11 +33,11 @@
           </a>
           <nav class="header__navigation">
             <ul class="header__list">
-              <li class="header__item"><a class="header__link" href="#">About us</a></li>
-              <li class="header__item"><a class="header__link" href="#">Our courses</a></li>
-              <li class="header__item"><a class="header__link" href="#">Our mentors</a></li>
-              <li class="header__item"><a class="header__link" href="#">Reviews</a></li>
-              <li class="header__item"><a class="header__link" href="#">Contacts</a></li>
+              <li class="header__item"><a class="header__link" href="#about">About us</a></li>
+              <li class="header__item"><a class="header__link" href="#courses">Our courses</a></li>
+              <li class="header__item"><a class="header__link" href="#mentors">Our mentors</a></li>
+              <li class="header__item"><a class="header__link" href="#reviews">Reviews</a></li>
+              <li class="header__item"><a class="header__link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
           <a class="header__camera" href="#">
@@ -55,7 +55,7 @@
                 </defs>
             </svg>
           </a>
-          <button class="header__button">
+          <button class="header__button" data-menu-open>
             <svg width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
               <g id="Nav">
               <line id="Line 3" x1="5.86963" y1="3.66669" x2="31.0001" y2="3.66669" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -65,7 +65,7 @@
             </svg>
           </button>
         </div>
-        <button class="header__sign" type="button">SIGN UP</button>
+        <a class="header__sign" href="#sign">SIGN UP</a>
     </div>
   </header>
   <main class="main">
@@ -110,7 +110,7 @@
           <img src="./images/Photographer.png">
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <p class="about__title">About <span>Us</span></p>
         <div class="about__wrapper">
           <img class="camera" src="./images/camera.png">
@@ -125,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="courses">
+      <section id="courses" class="courses">
         <div class="courses__text-wrap">
           <p class="courses__title">
             Our <span>Courses</span>
@@ -176,7 +176,7 @@
           </div>
         </div>
       </section>
-      <section class="mentors">
+      <section id="mentors" class="mentors">
         <p class="mentors__title">
           Our <span>Mentors</span>
         </p>
@@ -205,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="sign">
+      <section id="sign" class="sign">
         <div class="sign__wrap"> 
           <p class="sign__title">
             Sign <span>Up</span>
@@ -232,8 +232,10 @@
           </div>
         </div>
       </section>
-      <section class="clients">
-        <p class="clients__title">Reviews</p>
+      <section id="reviews" class="clients">
+        <div class="clients__main">
+          <p class="clients__title">Reviews</p>
+        </div>
         <div class="clients__wrap">
           <div class="client">
             <div class="client__wrapper">
@@ -324,7 +326,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__info">
+        <div id="contacts" class="footer__info">
           <svg class="footer__logo" width="127" height="20" viewBox="0 0 127 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="logo">
             <g id="Focus.Frame">
@@ -356,11 +358,11 @@
           </div>
           <div class="footer__nav">
             <ul>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">OUR COURSES</a></li>
-              <li><a href="#">OUR MENTORS</a></li>
-              <li><a href="#">REVIEWS</a></li>
-              <li><a href="#">CONTACTS</a></li>
+              <li><a href="#about">ABOUT US</a></li>
+              <li><a href="#courses">OUR COURSES</a></li>
+              <li><a href="#mentors">OUR MENTORS</a></li>
+              <li><a href="#reviews">REVIEWS</a></li>
+              <li><a href="#contacts">CONTACTS</a></li>
             </ul>
           </div>
         </div>
@@ -375,6 +377,27 @@
       </div>
     </div>
   </footer>
+  <div class="menu is-hidden" data-menu>
+    <div class="modal__window">
+      <button class="modal__close-btn" data-menu-close type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M24 8L8 24" stroke="#121212" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 8L24 24" stroke="#121212" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <nav class="header__nav">
+        <ul>
+          <li class="fw"><a href="#about">ABOUT US</a></li>
+          <li><a href="#courses">OUR COURSES</a></li>
+          <li><a href="#mentors">OUR MENTORS</a></li>
+          <li><a href="#reviews">REVIEWS</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+      </nav>
+      <img class="head__img" src="./images/camera__header.png">
+    </div>
+  </div>
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 </html>
